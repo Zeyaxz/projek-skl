@@ -1,0 +1,203 @@
+/* dashboard mahasiswa */
+.kotak_poin {
+  width: 250px;
+  min-height: 160px;
+}
+
+/* mahasiswa */
+.search-box {
+  width: 200px;
+}
+
+/* halaman utama */
+.layar {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 20%;
+  font-family: "Poppins";
+}
+
+html body .judul:hover,
+.judul.active {
+  border: none;
+  border-bottom: 2px solid #00509e !important;
+  background-color: white !important;
+  border-radius: 0px !important;
+}
+
+.nav-link:hover,
+.slideInDown li:hover,
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: #00509e;
+  border-radius: 6px !important;
+}
+
+.dropdown-item {
+  border-radius: 6px !important;
+}
+
+.design {
+  --bs-nav-pills-link-active-bg: #00509e !important;
+  --bs-nav-link-color: black !important;
+  font-weight: 450;
+}
+
+.konten {
+  width: 80%;
+}
+
+.logo {
+  height: 70px;
+  border-bottom: 2px solid white;
+  width: 100%;
+  justify-content: center;
+  background-color: #002b5b !important;
+}
+
+.header {
+  background-color: white;
+  height: 70px;
+  box-shadow: 0px 0px 10px -2px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0px 0px 10px -2px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 10px -2px rgba(50, 50, 50, 0.75);
+}
+
+.isi_sidebar {
+  position: fixed;
+  width: inherit;
+  height: 100vh;
+  padding-top: 0 !important;
+  background-color: #002b5b !important;
+}
+
+.dropdown-menu,
+.notif-popup {
+  background-color: #002b5b !important;
+}
+
+.dropdown-menu.show {
+  position: fixed !important;
+  right: 0px !important;
+  left: calc(100% - 200px);
+  top: 25px !important;
+  width: 185px;
+}
+
+.isi_sidebar *,
+.dropdown-menu *,
+.notif-popup *,
+.logo * {
+  color: white !important;
+}
+
+.isi {
+  min-height: calc(100vh - 70px);
+}
+
+.table {
+  margin-bottom: 0 !important;
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 300ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* mahasiswa */
+.max-flex {
+  min-height: 48px;
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .container,
+  .container-sm {
+    max-width: 1000px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container{
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 823px) {
+  .name-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .sidebar {
+    width: 0px;
+    overflow: hidden;
+  }
+
+  .konten {
+    width: 100%;
+  }
+  .btn-sidebar {
+    display: inline-block !important;
+  }
+
+  .sidebar1 {
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+  .custom-card {
+    width: 70%;
+}
+.pembungkus-card{
+    display: flex;
+    justify-content: center;
+  }
+}

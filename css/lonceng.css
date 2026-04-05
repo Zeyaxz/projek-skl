@@ -1,0 +1,65 @@
+.notif-container {
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+.notif-popup {
+display: none;
+position: absolute;
+right: 0;
+top: 15px !important;
+width: 300px;
+background: white;
+border: 1px solid #ddd;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+z-index: 1001;
+border-radius: 6px !important;
+}
+
+.notif-popup ul {
+list-style: none;
+padding: 10px;
+margin: 0;
+max-height: 250px;
+overflow-y: auto;
+}
+
+.notif-popup ul li {
+padding: 8px;
+}
+
+.notif-popup ul li:last-child {
+border-bottom: none;
+}
+
+.badge-hidden {
+display: none;
+}
+
+.btn-notif{
+    border-color: white;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bi-bell{
+    font-size: 20px;
+}
+
+.badgenotif{
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    font-size: 12px !important;
+    border-radius: 50% !important;
+    font-style: normal;
+}
+
+.judul-notif{
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    padding-left: 10px;
+    border-bottom: 2px solid white;
+}
