@@ -1,0 +1,91 @@
+-- Jangan lupa mengatur setingan koneksi di koneksi.php (TERUTAMA " PASSWORD ")
+-- Dan buat database SKL untuk sql juga udh ada
+
+Pada Web sederhana ini dengan vanilla php tapi gk ada coklat php sih apalagi laravel, untuk laravel masih onProgress(belajar untuk meledak)
+Ide web tentang syarat kelulusan bagi mahasiswa untuk mendapatkan poin lewat sertifikat atau bukti kegiatan
+
+akun yang bisa di pake demo :
+operator : asd
+pw : asd
+
+mahasiswa : 1111
+pw: asd
+
+
+memiliki sederhana fitur {
+    -- responsif tipis-tipis
+    -- mempunyai 2 Level_user['operator','mahasiswa'];
+    Level_user['operator']{
+        -- klik logo untuk kembali ke dashboard
+        -- memiliki dashboard Operator{
+            -- jumlah mahasiswa
+            -- jumlah Prodi
+            -- jumlah kategori kegiatan
+            -- jumlah kegiatan
+            -- jumlah Sertifikat
+            -- Pie Chart dari status Sertifikat
+
+            dan gk kalah menariknya ada tabel cepat yang dimana datanya muncul jika status sertifikat "Menunggu validasi"
+            ,langsung bisa aksi edit
+        },
+        -- Tabel Mahasiswa{
+            -- Filter{
+                -- Kelas
+                -- Angkatan
+                -- Nama
+            }
+            -- Manampilkan Data Mahasiswa
+            -- Tambah Data Mahasiswa
+            -- Edit Data Mahasiswa
+            -- Delete Data Mahasiswa
+        },
+        -- Tabel Prodi{
+            -- Manampilkan Data Prodi
+            -- Tambah Data Prodi
+            -- Edit Data Prodi
+            -- Delete Data Prodi
+        },
+        -- Tabel Kegiatan{
+            -- Manampilkan Data Kegiatan dan Jenis Kegiatan
+            -- Tambah Data Kegiatan
+            -- Edit Data Kegiatan dan Jenis Kegiatan
+            -- Delete Data Kegiatan
+            -- Membuat Laporan Kegiatan
+        },
+        -- Tabel Sertifikat{
+            -- Menampilkan Data Sertifikat dengan status yang dipilih
+            -- Filter Jenis Kegiatan
+            -- Membuat Laporan Sertifikat
+            -- Mengarahkan Data Sertifikat dengan klik data untuk melihat detail
+        }
+        -- Detail Sertifikat{
+            -- Menampilkan Semua Data Sertifikat
+            -- Memberikan Status tidak valid dan Valid, beserta catatan jika tidak valid
+        }
+        -- Tabel Pegawai {
+            -- Menampilkan Data Pegawai
+            -- Tambah Data Pegawai
+            -- Edit data Diri sendiri beserta password jika ingin atau bahkan ganti password saja
+            -- Edit data ke semua jika login ke pegawai bernama yenny
+        }
+    },
+    Level_user['mahasiswa']{
+        -- memiliki lonceng yang berfungsi memberikan notifikasi jika status sertifikat telah diubah, dan akan menampilkan angka banyak notif hingga notif dibuka
+        -- klik logo untuk kembali ke dashboard
+        -- Edit Password
+        -- memiliki dashboard mahasiswa{
+            -- Pie Chart dari status Sertifikat
+            -- Menampilkan Jumlah Sertifikat
+            -- Menampilkan Jumlah Poin
+            -- Tabel shortcut yang muncu jika status tidak valid
+            -- (Jika Poin mencapai 30) akan memunculkan tombol untuk mendownload sertifikat kelulusan
+        }
+        -- Tabel Sertifikat{
+            -- Menampilkan Data Sertifikat dengan status yang dipilih
+            -- Filter Jenis Kegiatan
+            -- Upload Laporan Sertifikat
+            -- Mengarahkan Data Sertifikat dengan klik data untuk melihat detail
+        }
+    },
+    -- BISA LOGOUT
+}
